@@ -24,5 +24,5 @@ jobs:
       - name: Build Vue.js Project
         run: npm run build
 
-      - name: Deploy to Vercel
+      - name: Deploy to Vercel 
         run: npx vercel --token ${{ secrets.VERCEL_TOKEN }}
