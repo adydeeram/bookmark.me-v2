@@ -19,10 +19,10 @@ jobs:
           node-version: 14
 
       - name: Install Dependencies
-        run: npm install
+        run: yarn
 
       - name: Build Vue.js Project
-        run: npm run build
+        run: yarn build
 
       - name: Deploy to Vercel
         run: npx vercel --token ${{ secrets.VERCEL_TOKEN }}
